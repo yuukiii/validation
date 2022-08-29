@@ -2,8 +2,6 @@ provider "aws" {
   region     = var.region
   access_key = var.AWSAccessKeyId
   secret_key = var.AWSSecretKey
-
-
 }
 
 
@@ -12,10 +10,7 @@ resource "aws_key_pair" "awesome-key" {
   public_key = var.AWSPublicKey
 }
 
-resource "aws_key_pair" "awesome-key" {
-  key_name   = var.AWSPublicKeyName
-  public_key = var.AWSPublicKey
-}
+
 
 resource "aws_security_group" "awesome-sq" {
   name        = "awesome-sq"
