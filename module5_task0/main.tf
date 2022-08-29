@@ -2,15 +2,15 @@ provider "aws" {
   region     = var.region
   access_key = var.AWSAccessKeyId
   secret_key = var.AWSSecretKey
-  default_tags {
-    tags = {
-      Environment = "Test"
-      Name        = "EDX Terraform"
-    }
-  }
+
 
 }
 
+
+resource "aws_key_pair" "awesome-key" {
+  key_name   = var.AWSPublicKeyName
+  public_key = var.AWSPublicKey
+}
 
 resource "aws_key_pair" "awesome-key" {
   key_name   = var.AWSPublicKeyName

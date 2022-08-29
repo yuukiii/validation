@@ -36,7 +36,7 @@ terraform.rc
 
 
 
-!/module5_task0/aws_variables.tf
-!/AWS_Key.txt
-!/module5_task0/id_rsa
-!/module5_task0/id_rsa.pub
+*aws_variables.tf
+*AWS_Key.txt
+*module5_task0/id_rsa
+*module5_task0/id_rsa.pub
