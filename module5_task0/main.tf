@@ -13,8 +13,8 @@ provider "aws" {
 
 
 resource "aws_key_pair" "awesome-key" {
-  key_name   = "awesome-key"
-  public_key = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCHCBtE7JYzllgFr88YoTBK1Nmc5rPiTQXQTqaaRpyZwks9iT6QfnQJ4N/9C5oprKvu6aqcRm35faRFsuHmTJd1UEtxnO3UkFI6S9vZNMbIIg4Y2gf5zqkbp4Qu7eNQHVNvlVC72LYr0GtQMS7b79Op93qx gdaA7NdS8O1odKZKiQIDAQAB"
+  key_name   = var.AWSPublicKeyName
+  public_key = var.AWSPublicKey
 }
 
 resource "aws_security_group" "awesome-sq" {

@@ -12,10 +12,7 @@ variable "AWSSecretKey" {
   default     = "s88Oc6TH+RN0OuN5Eiuix84racHE/aWuQwm+Dwwh"
 }
 
-variable "AWSPublicKeyName" {
-  description = "AWS public key pair name"
-  default     = "awesome-key"
-}
+
 
 
 
