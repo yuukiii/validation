@@ -41,3 +41,4 @@ terraform.rc
 *module5_task0/id_rsa
 *module5_task0/id_rsa.pub
 /module5_task0/awesome-key.pem
+/.idea/
